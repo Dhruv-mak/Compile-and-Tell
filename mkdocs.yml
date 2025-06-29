@@ -1,1 +1,27 @@
-site_name: My Docs
+site_name: Compile and Tell
+site_url: https://dhruv-mak.github.io/Compile-and-Tell/
+repo_name: Dhruv-mak/Compile-and-Tell
+repo_url: https://github.com/Dhruv-mak/Compile-and-Tell
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: lime
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
