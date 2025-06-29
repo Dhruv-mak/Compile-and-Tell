@@ -4,6 +4,10 @@ repo_name: Dhruv-mak/Compile-and-Tell
 repo_url: https://github.com/Dhruv-mak/Compile-and-Tell
 theme:
   name: material
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - content.code.annotate
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -22,6 +26,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - attr_list
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
