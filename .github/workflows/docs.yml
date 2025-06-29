@@ -21,4 +21,4 @@ jobs:
       - name: Install Dependencies
         run: uv sync --locked --all-extras --dev
       - name: Deploy to branch
-      - run: uv run mkdocs gh-deploy --force
+        run: uv run mkdocs gh-deploy --force
